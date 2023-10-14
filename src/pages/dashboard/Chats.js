@@ -166,7 +166,12 @@ const Chats = () => {
         <Stack
           sx={{
             flexGrow: 1,
-            "&:hover": { overflowY: "scroll" },
+            "&:hover": {
+              overflowY: "scroll",
+              scrollbarWidth: "thin",
+              scrollbarColor: "red",
+            },
+
             height: "100%",
             transitionDelay: 2,
           }}
