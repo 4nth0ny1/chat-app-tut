@@ -106,15 +106,13 @@ const DashboardLayout = () => {
               {Nav_Buttons.map((el) =>
                 el.index === selected ? (
                   <Box
+                    key={el.index}
                     sx={{
                       backgroundColor: theme.palette.primary.main,
                       borderRadius: 1.5,
                     }}
                   >
-                    <IconButton
-                      sx={{ width: "max-content", color: "#fff" }}
-                      key={el.index}
-                    >
+                    <IconButton sx={{ width: "max-content", color: "#fff" }}>
                       {el.icon}
                     </IconButton>
                   </Box>
