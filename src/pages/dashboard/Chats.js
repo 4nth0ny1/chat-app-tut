@@ -137,7 +137,7 @@ const Chats = () => {
         boxShadow: "0px 0px 2px rgba(0,0,0,0.25)",
       }}
     >
-      <Stack p={3} spacing={2} sx={{ height: "100vh" }}>
+      <Stack p={3} spacing={2} sx={{ height: "100vh", overflow: "hidden" }}>
         <Stack
           direction="row"
           alignItems="center"
@@ -166,8 +166,7 @@ const Chats = () => {
         <Stack
           sx={{
             flexGrow: 1,
-
-            overflow: "scroll",
+            "&:hover": { overflowY: "scroll" },
             height: "100%",
             transitionDelay: 2,
           }}
